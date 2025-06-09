@@ -1,42 +1,21 @@
-#
-# Be sure to run `pod lib lint SocialKit-iOS.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'SocialKit-iOS'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of SocialKit-iOS.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/高昇/SocialKit-iOS'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/dppo/SocialKit-iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '高昇' => 'xiaogao235@gmail.com' }
-  s.source           = { :git => 'https://github.com/高昇/SocialKit-iOS.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Dppo' => 'xiaogao235@gmail.com' }
+  s.source           = { :git => 'https://github.com/dppo/SocialKit-iOS.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'SocialKit-iOS/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'SocialKit-iOS' => ['SocialKit-iOS/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency "WechatOpenSDK-XCFramework"
+  s.vendored_frameworks = ['SocialKit-iOS/libs/*.framework', 'SocialKit-iOS/libs/*.xcframework']
+  s.frameworks = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit'
+  s.libraries = 'iconv', 'sqlite3', 'stdc++', 'z'
+  s.pod_target_xcconfig   = { 'EXCLUDED_ARCHS[sdk=macosx*]' => 'x86_64 arm64' }
+  s.user_target_xcconfig  = { 'EXCLUDED_ARCHS[sdk=macosx*]' => 'x86_64 arm64' }
+  
 end

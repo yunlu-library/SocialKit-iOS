@@ -1,0 +1,6 @@
+framework module SocialKit_iOS {
+  umbrella header "SocialKit-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

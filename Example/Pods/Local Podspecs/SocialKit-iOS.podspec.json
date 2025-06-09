@@ -1,0 +1,22 @@
+{
+  "name": "SocialKit-iOS",
+  "version": "0.1.0",
+  "summary": "A short description of SocialKit-iOS.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/高昇/SocialKit-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "高昇": "xiaogao235@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/高昇/SocialKit-iOS.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "SocialKit-iOS/Classes/**/*"
+}

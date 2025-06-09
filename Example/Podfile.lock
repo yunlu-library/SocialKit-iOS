@@ -1,0 +1,16 @@
+PODS:
+  - SocialKit-iOS (0.1.0)
+
+DEPENDENCIES:
+  - SocialKit-iOS (from `../`)
+
+EXTERNAL SOURCES:
+  SocialKit-iOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SocialKit-iOS: ddd2c1a8a8d69850672c0c726ad9609274413975
+
+PODFILE CHECKSUM: ea387ad7950ab4dca5450bd165b29eb8860c4ebf
+
+COCOAPODS: 1.16.2
