@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SocialKit-iOS'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = 'A short description of SocialKit-iOS.'
   s.homepage         = 'https://github.com/yunlu-library/SocialKit-iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
 
   s.source_files = 'SocialKit-iOS/Classes/**/*'
   
-  s.dependency "WechatOpenSDK-XCFramework"
-  s.vendored_frameworks = ['SocialKit-iOS/libs/*.framework', 'SocialKit-iOS/libs/*.xcframework']
-  s.frameworks = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit'
-  s.libraries = 'iconv', 'sqlite3', 'stdc++', 'z'
+  s.ios.dependency "WechatOpenSDK-XCFramework"
+  s.ios.vendored_frameworks = ['SocialKit-iOS/libs/*.framework', 'SocialKit-iOS/libs/*.xcframework']
+  s.ios.frameworks = 'Security', 'SystemConfiguration', 'CoreGraphics', 'CoreTelephony', 'WebKit'
+  s.ios.libraries = 'iconv', 'sqlite3', 'stdc++', 'z'
 end
