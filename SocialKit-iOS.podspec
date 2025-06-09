@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = 'SocialKit-iOS'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A short description of SocialKit-iOS.'
-  s.homepage         = 'https://github.com/dppo/SocialKit-iOS'
+  s.homepage         = 'https://github.com/yunlu-library/SocialKit-iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Dppo' => 'xiaogao235@gmail.com' }
-  s.source           = { :git => 'https://github.com/dppo/SocialKit-iOS.git', :tag => s.version.to_s }
+  s.author           = { 'dppo' => 'xiaogao235@gmail.com' }
+  s.source           = { :git => 'https://github.com/yunlu-library/SocialKit-iOS.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
 
